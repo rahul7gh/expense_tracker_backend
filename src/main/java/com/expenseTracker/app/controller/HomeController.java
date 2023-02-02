@@ -12,5 +12,11 @@ public class HomeController {
 	{
 		return "Ola Amigo!";
 	}
+	
+	@GetMapping("/k")
+	public String gag()
+	{
+		return "Ola Amigo!";
+	}
 
 }
