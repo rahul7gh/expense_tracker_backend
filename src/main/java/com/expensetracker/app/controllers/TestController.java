@@ -3,12 +3,14 @@ package com.expensetracker.app.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import reactor.core.publisher.Mono;
+
 @RestController
 public class TestController {
 
 	@GetMapping
-	public String tesHello()
+	public Mono<String> tesHello()
 	{
-		return "Aayeah!";
+		return Mono.just("Yosh");
 	}
 }
