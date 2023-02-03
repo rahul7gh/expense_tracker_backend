@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD ${project.build.finalName}.jar ${project.build.finalName}.jar
+ADD app-0.0.1-SNAPSHOT.jar app-0.0.1-SNAPSHOT.jar
 EXPOSE $PORT
-CMD ["java", "-jar","${project.build.finalName}.jar"]
+CMD ["java", "-jar","app-0.0.1-SNAPSHOT.jar"]

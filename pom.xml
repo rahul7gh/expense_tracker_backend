@@ -81,6 +81,8 @@
 								<resource>
 									<directory>${project.build.directory}/</directory>
 									<include>${project.build.finalName}.jar</include>
+									
+									<!-- <targetPath>app.jar</targetPath> -->
 								</resource>
 								<resource>
 									<directory>${basedir}/src/main/resources</directory>
